@@ -1,0 +1,338 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.8),rgba(4,9,30,0.8)),url("../img/pradomylife.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links{
+    flex:1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width:100%;
+}
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 82px; 
+    line-height: 60px; 
+}
+.ruk{
+    color: #f44336;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 24px;
+    color: white;
+}
+
+nav .fa{
+    display: none;
+}
+
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 20px;    
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right:-200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+
+/* --------------------mainContent----------------------------------*/
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Img/150330-abstract-black-blue-and-brown-diagonal-shiny-lines-background.jpg);    
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    
+}
+.card{
+    width: 100%;
+    max-width: 470px;
+    color: white;
+    text-align: center;
+    padding: 50px 35px;
+    margin-left: 80px;
+    border: 1px solid rgba(255,255,255,0.3);
+    background: rgba(255,255,255,0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+    backdrop-filter: blur(1px);
+}
+
+.card img{
+    width: 140px;
+    border-radius: 50%;
+}
+.card h2{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.card p{
+    font-size: 18px;
+    margin: 10px auto;
+    max-width: 330px;
+    font-weight: 600;
+}
+.card .links ul{
+    line-height: 35px;
+    font-size: 25px;
+}
+
+.card .links img{
+    width: 40px;
+    border-radius: 50%;
+    margin: 10px 5px;
+    transition: background 0.5s;
+}
+
+.card .links img:hover{
+    background: #5860ad;
+}
+.btn{
+    text-decoration: none;
+    display: inline-block;
+     font-size: 18px;
+     font-weight: 600;
+     background: white;
+     color: rgb(91, 152, 197);
+     padding: 10px 30px;
+     border-radius: 30px;
+     margin: 30px 0 10px;
+}
+.info{
+    color: #4b4fe2;
+    margin-right: 16px;
+}
+.main-container{
+    padding: 20px;
+}
+.skill-bar{
+    background-color: #bdc9ea;
+    border-radius: 16px;
+}
+.progress-bar{
+    padding: 0.1em 16px;
+    border-radius: 16px;
+    text-align: center;
+    color: #fff;
+    background-color: #4b4fe2;
+}
+.links a{
+    display: inline-block;
+}
+.title{
+    padding: 8px;
+}
+.main-container .info{
+    justify-content: left;
+}
+@media(max-width:700px){
+    .container{
+        flex-direction: column;
+    }
+   
+}
+/*---------------------------------------footer-------------------------------*/
+.footer{  
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px; 
+    font-weight: 600;
+}
+
+   /*--------------------Projects-----------------------------------*/
+   .prj{
+    background-image:linear-gradient(rgba(4,9,30,0.8),rgba(4,9,30,0.6)), url(../Img/istockphoto-1211421352-612x612.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+
+.prj-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+   
+}
+.prj-card{
+    font-family: sans-serif;
+    width: 550px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    margin: 20px;
+    border: 4px double rgb(32, 38, 218);
+    background-color: rgba(64, 4, 61, 0.814);
+    backdrop-filter: blur(0.5px);
+}
+
+.card img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    
+    
+}
+.prj-card-content{
+    padding: 16px;
+    font-size: 28px;
+    margin-bottom: 8px;
+    margin: 20px;
+}
+h1{
+    font-size: 70px;
+    margin-left: 40px;
+    margin-top: 30px;
+    color: rgb(133, 129, 129);
+}
+hr{
+   border: 3px solid silver;
+}
+
+.prj-card-content h2{
+    color: rgba(240, 242, 243, 0.854);
+    font-weight: 800;
+    
+}
+
+.prj-card-content h3{
+    color: rgb(235, 236, 238);
+    font-style: italic;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.prj-card-content hr{
+    border: 3px solid rgb(156, 147, 147);
+}
+
+   
+   /*-----------------------education page-------------------------*/
+
+    .edu{
+        background-image:linear-gradient(rgba(4,9,30,0.8),rgba(4,9,30,0.6)), url(../Img/Black\ and\ Orange\ Ombre.jpg);
+        background-position: center;
+        background-size: cover; 
+    }
+
+   .edu-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+.edu-card{
+    font-family: sans-serif;
+    width: 550px;   
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    margin: 20px;
+    border: 4px double rgb(141, 118, 4);
+    background-color: rgba(128, 45, 10, 0.814);
+    backdrop-filter: blur(0.5px);
+}
+
+.card img{
+    width:100% ;
+    height: auto;
+}
+.edu-card-content{
+    padding: 16px;
+    font-size: 28px;
+    margin-bottom: 8px;
+    margin: 20px;
+}
+.edu h1{
+    font-size: 60px;
+    margin-left: 40px;
+    margin-top: 30px;
+    color: white;
+}
+.edu hr{
+   border: 2px solid rgb(244, 235, 229);
+}
+
+.edu-card h3{
+    color: white;
+}
